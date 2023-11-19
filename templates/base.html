@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/htmx.org@1.9.8"
+            integrity="sha384-rgjA7mptc2ETQqXoYC3/zJvkU7K/aP44Y+z7xQuJiVnB/422P/Ak+F/AqFR7E4Wr"
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link href="https://fonts.cdnfonts.com/css/fira-sans" rel="stylesheet">
+    <title>htmx/askama + axum on Shuttle &mdash; {% block title %}Base{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div id="content">
+        {% block content %}<p>Placeholder content</p>{% endblock %}
+    </div>
+</body>
+</html>

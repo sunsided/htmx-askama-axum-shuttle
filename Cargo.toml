@@ -1,0 +1,20 @@
+[package]
+name = "sunsided-htmx-shuttle"
+authors = ["Markus Mayer", "Joshua Mo"]
+repository = "git@github.com:sunsided/htmx-askama-axum-shuttle.git"
+homepage = "https://github.com/sunsided/htmx-askama-axum-shuttle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+askama = { version = "0.12.1", features = ["with-axum"] }
+askama_axum = "0.3.0"
+axum = "0.6.20"
+serde = { version = "1.0.192", features = ["derive"] }
+serde_json = "1.0.108"
+shuttle-axum = "0.33.0"
+shuttle-runtime = "0.33.0"
+shuttle-shared-db = { version = "0.33.0", features = ["postgres"] }
+sqlx = { version = "0.7.2", features = ["runtime-tokio-native-tls", "postgres"] }
+tokio = "1.34.0"
+tokio-stream = { version = "0.1.14", features = ["sync"] }

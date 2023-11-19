@@ -1,0 +1,24 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 0.25rem;
+}
+
+.stream {
+    font-family: "Fira Code", monospace;
+}
+
+@font-face {
+    font-family: "Fira Code", Courier;
+    src: url(https://unpkg.com/browse/firacode@6.2.0/);
+}
